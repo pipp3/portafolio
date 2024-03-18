@@ -1,0 +1,23 @@
+---
+import Menu from "../components/Menu.astro";
+import TitlePage from "../components/TitlePage.astro";
+import CardWorks from "../components/CardWorks.astro";
+import Button from "../components/Button.astro";
+---
+
+<Menu/>
+
+<section class="bg-gray-200 py-20 px-8">
+    <div class="max-w-6xl mx-auto">
+        <TitlePage title="Works" subtitle="The best of my works"/>
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-14">
+            <CardWorks title="Work1" image="../images/image1.jpg" desc="Lorem ipsumkdakjjkadakjad">
+                <Button title="Ver mas..."/>
+            </CardWorks>
+
+            <CardWorks title="Work2" image="../images/image2.jpg" desc="Lorem ipsumkdakjjkadakjad">
+                <Button title="Ver mas..."/>
+            </CardWorks>
+        </div>
+    </div>
+</section>
